@@ -13,3 +13,10 @@ repos:
             "--rcfile=.pylintrc",  # Link to your config file
             "--load-plugins=pylint.extensions.docparams",  # Load an extension
           ]
+
+      - id: pytest
+        name: pytest
+        entry: pytest
+        language: system
+        types: [python]
+        pass_filenames: false  # Run pytest on all tests, not only staged files
