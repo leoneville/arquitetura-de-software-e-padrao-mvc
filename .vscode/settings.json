@@ -1,6 +1,6 @@
 {
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
+    "pylint.enabled": true,
+    "editor.formatOnSave": true,
     "files.exclude": {
         "**/*.pyc": {"when": "$(basename).py"},
         "**/__pycache__": true,
