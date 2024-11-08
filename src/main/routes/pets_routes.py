@@ -21,7 +21,7 @@ def list_pets():
         return jsonify(http_response.body), http_response.status_code
 
 
-@pet_route_bp.route("/pets/<str:name>", methods=["DELETE"])
+@pet_route_bp.route("/pets/<string:name>", methods=["DELETE"])
 def delete_pet(name: str):
     try:
         http_request = HttpRequest(param={"name": name})
